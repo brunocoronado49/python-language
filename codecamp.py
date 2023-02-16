@@ -182,10 +182,10 @@ def mostrar_mensaje():
 
 mostrar_mensaje()
 
-def mostrar_doble(num):
+def mostrar_doble(num): # parametros
     print(num * 2)
 
-mostrar_doble(4)
+mostrar_doble(4) # argumentos
 
 def sumar(x, y):
     print(x + y)
@@ -193,3 +193,4 @@ def sumar(x, y):
 sumar(10, 54)
 
 
+#! VIDEO: 3:22:10
