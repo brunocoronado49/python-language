@@ -10,14 +10,6 @@ soltero = False
 
 print(name[3])
 
-# Diccionarios
-jugador = {
-    'Bruno': 10,
-    'programador': True,
-    'nivel': 100
-}
-print(jugador['programador']) # accedemos por medio de la llave al valor
-
 # Constantes
 PI = 3.14 # se escriben con mayuculas
 
@@ -42,6 +34,10 @@ match color:
         print('Advertencia!')
     case _:
         print('Error!')
+
+
+# ==============================================
+
 
 # Funciones
 def sumar(primero, segundo):

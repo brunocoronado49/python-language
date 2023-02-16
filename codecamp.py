@@ -91,7 +91,7 @@ elif entero == 100:
 else:
     print('No es ninguno')
 
-# Listas
+# Listas (mutables)
 numeros1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 print(numeros1[5]) # accedemos por medio del indice
 
@@ -112,3 +112,84 @@ vocales.extend(['c', 'd']) # extewndemos la lista
 vocales.pop() # elimmina y retorna el elemento
 vocales.reverse() # retorna la lista a la inversa
 vocales.sort() # ordena la lista
+
+# Tuplas (inmutables)
+hola_tupla = (1, 2, 3, 4, 5)
+
+print(hola_tupla[2])
+print(3 in hola_tupla)
+
+tupla = ('a', 'b', 'c', 'd')
+tupla.index('b')
+tupla.count('b')
+
+# Diccionarios: coleccion pares-valor
+persona = {
+    'nombre': 'Francisco',
+    'edad': 25,
+    'soltero': False
+}
+
+jugador = {
+    'Bruno': 10,
+    'programador': True,
+    'nivel': 100
+}
+print(jugador['programador']) # accedemos por medio de la llave al valor
+
+edades = {
+    'Bruce': 25,
+    'Lupita': 26
+}
+
+edades['Franco'] = 30 # agrega una nuueva
+edades['Bruce'] = 26 # Modifica 
+
+del edades['Franco'] # para eliminar una clave del diccionario
+
+'Bruce' in edades # vemos si existe en el dicc
+
+# Ciclos
+#? Ciclos For
+for i in range(0, 10):
+    print(i)
+
+for chat in 'bucle':
+    print(char)
+
+for num in [1, 2, 3, 4 ,5]:
+    print(num)
+
+letras = {'a': 1, 'b': 2, 'c': 3}
+for clave in letras:
+    print(clave)
+
+for valor in letras.values():
+    print(valor)
+
+for clave, valor in letras.items():
+    print(clave, valor)
+
+#? Ciclos While
+x = 20
+while x < 35:
+    print(x)
+    x += 3
+
+# Funciones
+def mostrar_mensaje():
+    print('Hola Mundo')
+
+mostrar_mensaje()
+
+def mostrar_doble(num):
+    print(num * 2)
+
+mostrar_doble(4)
+
+def sumar(x, y):
+    print(x + y)
+
+sumar(10, 54)
+
+
