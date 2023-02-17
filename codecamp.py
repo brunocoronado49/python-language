@@ -154,7 +154,7 @@ del edades['Franco'] # para eliminar una clave del diccionario
 for i in range(0, 10):
     print(i)
 
-for chat in 'bucle':
+for char in 'bucle':
     print(char)
 
 for num in [1, 2, 3, 4 ,5]:
@@ -192,5 +192,44 @@ def sumar(x, y):
 
 sumar(10, 54)
 
+# Funcion con retorno
+def otra_suma(x, y):
+    return x + y
 
-#! VIDEO: 3:22:10
+resultado = otra_suma(4, 5)
+print(resultado)
+
+# Recursion
+def fibonacci(n):
+    if n == 0 or n == 1:
+        return n
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+fibonacci(5)
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n)
+# factorial(5) # retorna un error
+
+# Archivos
+#? Para abrir archivos se usa 'with'
+#? Modos de apretura como segundo parametro:
+#? r(read), w(write), a(append - añadir), Agregar un + incluye leer (w+ leer y escribir)
+with open('hola.txt', 'r') as archivo:
+    for linea in archivo:
+        print('Holiiiiiiiii prriiineees')
+        print(linea)
+
+notas = {
+    'nora': 78,
+    'bruce': 32,
+    'talia': 321
+}
+
+with open('burro.txt', 'w') as escribe:
+    for nombre, nota in notas.items():
+        escribe.write(nombre + ' - ' + str(nota) + '\n')
+
